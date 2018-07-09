@@ -1,0 +1,27 @@
+{% include "header.html" %}
+<h1 class="header">Edit Game</h1>
+<form action="{{url_for('editCateItem', category_id = category_id, items_id = items_id, item=editedCateItem)}}"
+  method="POST">
+  <p>Name:</p>
+  <input type="text" size="40" name="name" placeholder = '{{item.name}}'>
+  <p>Description:</p>
+  <input type="text" size="40"  name="description" placeholder = '{{item.description}}'>
+  <p>Game Category:</p>
+  <select name="category_id">
+    <option value=1 >Role-Playing Games</option>
+    <option value=2 >Action Games</option>
+    <option value=3 >Puzzle Games</option>
+    <option value=4 >Shooter Games</option>
+    <option value=5 >Fighting Games</option>
+    <option value=6 >Sports Games</option>
+    <option value=7 >Racing Games</option>
+    <option value=8 >Adventure Games</option>
+    <option value=9 >Strategy Games</option>
+  </select>
+  </br></br>
+  <input type="submit" value ="Update">
+  <a href = "{{url_for('game', category_id = category_id, items_id=items_id)}}"><button type="button">Cancel</button></a>
+  </br></br>
+</form>
+</body>
+</html>

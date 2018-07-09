@@ -1,0 +1,130 @@
+header {
+	text-align: center;
+	padding: 50px;
+	border-bottom: 5px solid black;
+	background: url("../static/bgi.jpg");
+	height:30px;
+}
+
+body {
+	position: absolute;
+	padding: 10px;
+	margin: 10px;
+	font-size: 20px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a:hover{
+		font-weight: bold;
+}
+
+
+nav ul {
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color: #cce6ff;
+}
+
+nav li{
+	float:left;
+  color:black;
+	font-size: 15pt;
+	line-height: 50px;
+}
+
+nav li a {
+	display:block;
+	color:black;
+	text-align: center;
+	padding:5px 5px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav li a:hover{
+	background-color: white;
+}
+
+
+article {
+	min-height: 428px;
+	line-height: 35px;
+	font-size:12pt;
+	margin:auto;
+	text-align: center;
+}
+
+article p{
+	font-weight: bold;
+}
+
+body {
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	padding: 5px;
+	margin: 5px;
+	font-size: 22px;
+}
+
+.flash {
+	text-align: center;
+	color: red;
+	font-size:8pt;
+}
+
+.inline {
+	display: inline;
+	color:#cce6ff;
+}
+
+.item {
+	text-align: center;
+	padding-top: 50px;
+	margin:auto;
+	font-size: 10pt;
+	line-height: 30px;
+}
+
+.description {
+	max-width: 80%;
+	text-align-last: auto;
+	padding-left: 10%;
+}
+
+.button {
+	color:white;
+	background:black;
+	padding: 8px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	margin: 4px 4px;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	cursor: pointer;
+}
+
+.button:hover {
+	font-weight: bold;
+}
+
+.login {
+	float: right;
+	padding: 30px;
+}
+
+a:hover {
+  color:red;
+}
+
+a {
+text-decoration: none;
+}

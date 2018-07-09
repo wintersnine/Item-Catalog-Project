@@ -1,0 +1,24 @@
+{% include "header.html" %}
+<nav>
+  <ul>
+    {% for i in category %}
+    <li>
+      <a href = "{{url_for('showCategory', category_id = i.id)}}"
+        style="color:black">{{i.name}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
+<article>
+  <p><a href = "{{url_for('newItem')}}" style="color:#900C3F">+ Add a new game</a></br></p>
+  <ul>
+    {% for i in items %}
+    <li>
+      <a href = "{{url_for('game',category_id=i.category_id, items_id=i.id)}}
+        "style="color:black">{{i.name}} - {{i.category.name}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</article>
+</body>
+</html>
